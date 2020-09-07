@@ -22,7 +22,7 @@ pipeline{
         }
         stage('Prod'){
             steps {
-                echo "Testes finalizados e projeto pronto para produção :)"
+                echo "Testes finalizados e projeto pronto para produção :) "
             }
         }
     }
