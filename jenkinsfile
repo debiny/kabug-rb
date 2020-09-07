@@ -16,12 +16,13 @@ pipeline{
         stage('Test'){
             steps {
                 echo "Executando testes"
+                sh 'bundle exec cucumber -p ci'
         }
     }
         stage('UAT'){
             steps {
                 echo "Aguardando teste manual"
-            input(message: "Vamos para produção? ok: Yes")
+                input(message: "Vamos para produção? ok: Yes")
             }
         }
         stage('Prod'){

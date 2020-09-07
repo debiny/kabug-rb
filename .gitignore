@@ -1,2 +1,4 @@
-logs
+logs/screenshot
+logs/*.json
+logs/*.html
 Gemfile.lock
